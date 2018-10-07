@@ -3,10 +3,12 @@ import marked from 'marked';
 
 function Preview({ rawMarkdown }) {
   return (
-    <div
-      id="preview"
-      dangerouslySetInnerHTML={{__html: rawMarkdown}}
-    >
+    <div className="preview-container">
+      <p>Preview</p>
+      <div
+        id="preview"
+        dangerouslySetInnerHTML={{ __html: rawMarkdown }}
+      />
     </div>
   );
 }

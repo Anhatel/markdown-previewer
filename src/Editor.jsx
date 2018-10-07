@@ -1,12 +1,15 @@
 import React from 'react';
 
-function Editor({ handleChange }) {
+function Editor({ text, handleChange }) {
   return (
-    <textarea
-      id="editor"
-      onChange={handleChange}
-    >
-    </textarea>
+    <div className="editor-container">
+      <p>Editor</p>
+      <textarea
+        id="editor"
+        value={text}        
+        onChange={handleChange}
+      />
+    </div>
   );
 }
 
